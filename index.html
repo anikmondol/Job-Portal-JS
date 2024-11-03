@@ -25,32 +25,34 @@
 
 <body>
 
-    <header class="header">
+    <header>
+        <!-- header start -->
 
-        <!-- navbar start -->
-
-        <nav class="nav">
-            <div class="container nav_container">
-                <a href="/" class="logo"><img src="image/transparent-bpo-logo.png" alt="" class="logo_img"></a>
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link">Find Jobs</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">News</a></li>
-                    <li class="nav_item"><a href="#" class="nav_btn">Login</a></li>
+        <nav id="header">
+            <a href="#"><img src="image/transparent-bpo-logo.png" class="logo" alt=""></a>
+            <div class="nav_container">
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="login.html">Find Jobs</a></li>
+                    <li><a href="blog.html">News</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <a id="close"><i class="fa-solid fa-xmark"></i></a>
                 </ul>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
-        <!-- navbar end -->
 
-        <!-- header container start -->
+          <!-- header container start -->
 
-        <div class="container">
             <div class="header_container ">
                 <div class="header_wrapper">
                     <h1 class="header_main_title">Explore open career opportunities.</h1>
                     <p class="header_p">We commit to exceptional company culture and outstanding benefits</p>
                     <div class="header_form">
-                        <h2 class="header_form_title">Find the job that best suits you.</h2>
+                        <h2 class="header_form_title sm_none">Find the job that best suits you.</h2>
                         <select value="country" class="header_select">
                             <option name="philippines" id="">Philippines</option>
                             <option name="bangladesh" id="">Bangladesh</option>
@@ -72,13 +74,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
 
         <!-- header container end -->
 
+        <!-- header end -->
     </header>
 
     <main>
+
 
         <!-- featured jobs start -->
 
@@ -157,7 +161,7 @@
                         </div>
                         <div class="cart_body">
                             <h4 class="cart_title">
-                                Junior Developer 
+                                Junior Developer
                             </h4>
                             <p class="cart_p">
                                 Sales, Service, & Support
@@ -317,8 +321,10 @@
     <footer>
         <div class="footer_container container">
             <div class="footer_element">
+               <div>
                 <img src="image/transparent-bpo-logo.png" alt="">
-                <h4 class="footer_title">Outsourcing Transformed</h4>
+               </div>
+                <h4 class="footer_title">Transformed</h4>
                 <ul>
                     <li>Customized solutions.</li>
                     <li>Passionate culture.</li>
