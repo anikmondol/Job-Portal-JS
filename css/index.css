@@ -46,6 +46,10 @@ ul {
     margin: 10rem 0rem;
 }
 
+.none {
+    display: none;
+}
+
 /* header */
 
 .header {
@@ -316,6 +320,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     object-fit: cover;
     height: 40rem;
     width: 100%;
@@ -325,7 +330,7 @@ ul {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .team_title {
@@ -383,7 +388,7 @@ ul {
 
 /* Our locations */
 
-.location_cart_container{
+.location_cart_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 5rem;
@@ -392,6 +397,7 @@ ul {
 
 .location_cart {
     position: relative;
+
 }
 
 .location_img img {
@@ -404,34 +410,34 @@ ul {
     bottom: 6rem;
     left: 3rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15rem;
     color: var(--color-withe-2);
-    width: 95%;
+    width: 80%;
 }
 
 .location_content .arrow {
     font-size: 3rem;
 }
 
-.location_title{
+.location_title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-.location_p{
+.location_p {
     font-size: 1rem;
 }
 
 
 /* footer */
 
-footer{
+footer {
     background-color: #00315B;
     padding: 4rem 0rem 3rem 0rem;
 }
 
-.footer_container{
+.footer_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
@@ -439,7 +445,7 @@ footer{
     margin-bottom: 4rem;
 }
 
-.footer_element img{
+.footer_element img {
     width: 50%;
     padding-bottom: 1.4rem;
 }
@@ -451,45 +457,45 @@ footer{
     font-size: 2rem;
     position: relative;
     margin-bottom: 1.5rem;
-  }
+}
 
 .footer_title::after {
     content: '';
     display: block;
-    width: 40%; 
-    height: 0.3rem; 
-    background-color: var(--color-yellow); 
+    width: 40%;
+    height: 0.3rem;
+    background-color: var(--color-yellow);
     margin-top: 0.5rem;
-  }
+}
 
 
-  .footer_element ul{
+.footer_element ul {
     list-style: none;
-  }
+}
 
-  .footer_element ul li{
-   font-size: 1.3rem;
-   margin-bottom: 0.7rem;
-   color: var(--color-withe-2);
-  }
+.footer_element ul li {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    color: var(--color-withe-2);
+}
 
-  .footer_element .extra{
+.footer_element .extra {
     margin-top: 2rem !important;
-  }
+}
 
-  .footer_element .footer_social{
+.footer_element .footer_social {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
-  }
+}
 
-  .footer_element .footer_social i{
-   background-color: var(--color-yellow);
-   padding: 0.8rem;
-   border-radius: 0.3rem;
-  }
+.footer_element .footer_social i {
+    background-color: var(--color-yellow);
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+}
 
-.copy{
+.copy {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -499,8 +505,163 @@ footer{
     font-size: 1.2rem;
 }
 
-.copy_container{
+.copy_container {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+}
+
+
+/* responsive  part  */
+
+@media only screen and (max-width: 800px) {
+
+    /* common style */
+
+    .none {
+        display: block;
+    }
+
+    .footer_none {
+        display: none;
+    }
+
+    /* header */
+
+    .header_container {
+        width: 100%;
+
+    }
+
+    .header_main_title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .header_form {
+        padding: 0.5rem 1rem;
+    }
+
+    .header_form_title {
+        font-size: 1.5rem;
+        color: var(--text-color);
+    }
+
+    .header_btn {
+        padding: 1rem 2rem;
+    }
+
+    .header_p {
+        color: var(--color-withe-2);
+        margin: 2rem 0rem;
+        font-size: 1.2rem;
+    }
+
+    .header_tag {
+        padding: 0rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    /* nav */
+
+    #navbar {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0rem;
+        right: -30rem;
+        width: 30rem;
+        height: 100vh;
+        background-color: var(--color-withe-2);
+        box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
+        padding: 8rem 0rem 0rem 1rem;
+        transition: 0.3s;
+    }
+
+
+    .nav_link {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .nav_link:hover {
+        padding: 1rem 2rem;
+    }
+
+    .nav_btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .nav_btn:hover {
+        background-color: var(--color-primary);
+        color: var(--color-withe-1);
+    }
+
+    
+
+    /* featured Jobs */
+
+    .section_header_title {
+        font-size: 2rem;
+    }
+
+    .section_header_link {
+        font-size: 1.3rem;
+    }
+
+    .section_cart_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    /* join */
+
+    .team_title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    /* find team */
+
+    .find_team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* our location */
+
+    .location_cart_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    /* common style */
+
+    .none {
+        display: block;
+    }
+
 }
