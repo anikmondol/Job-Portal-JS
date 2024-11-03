@@ -108,8 +108,8 @@ ul {
 }
 
 .nav_btn:hover {
-   background-color: var(--color-primary);
-   color: var(--color-withe-1);
+    background-color: var(--color-primary);
+    color: var(--color-withe-1);
 }
 
 
@@ -343,30 +343,73 @@ ul {
 
 /* find team */
 
-.cart_hr{
+.cart_hr {
     border-bottom: 0.01px solid #d2d2d2;
     padding-bottom: 10rem;
 }
 
-.find_cart img{
+.find_cart img {
     width: 100%;
     object-fit: cover;
 }
 
-.find_cart{
+.find_cart {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.find_title{
+.find_title {
     font-size: 2rem;
     color: var(--color-primary);
     margin-bottom: 2rem;
 }
 
-.find_p{
+.find_p {
     font-size: 1.5rem;
     line-height: 2.5rem;
     color: var(--text-color);
+}
+
+
+/* Our locations */
+
+.location_cart_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.location_cart {
+    position: relative;
+}
+
+.location_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.location_content {
+    position: absolute;
+    bottom: 6rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    color: var(--color-withe-2);
+    width: 95%;
+}
+
+.location_content .arrow {
+    font-size: 3rem;
+}
+
+.location_title{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.location_p{
+    font-size: 1rem;
 }
