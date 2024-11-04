@@ -21,7 +21,7 @@ if (close) {
 
 
  // Get the offset position of the navbar
- const sticky = navbar.offsetTop + 600;
+ const sticky = navbar.offsetTop + 145;
 
  // Add the sticky class to the navbar when you reach its scroll position
  // Remove the sticky class when you leave the scroll position
@@ -39,16 +39,13 @@ if (close) {
  };
 
 
+
+ 
+
+
  // Animations
 
-ScrollReveal().reveal("header", {
-    origin: "bottom",
-    distance: "20px",
-    opacity: 0,
-    delay: 200,
-  });
 
-  
   ScrollReveal().reveal("section", {
     origin: "bottom",
     distance: "20px",
@@ -72,3 +69,18 @@ ScrollReveal().reveal("header", {
     duration: 900,
     delay: 100,
   });
+
+  let fa_bookmark = document.querySelectorAll(".fa-bookmark");
+
+  fa_bookmark.forEach(element => {
+      element.addEventListener("click", e => {
+          if (element.style.color === "rgb(4, 173, 230)") {
+            alert("Do You Want Remove Bookmark");
+              element.style.color = ""; // Resets to the default color
+          } else {
+            alert("You Can Add A Bookmark");
+              element.style.color = "#04ADE6"; // Sets to blue
+          }
+      });
+  });
+  

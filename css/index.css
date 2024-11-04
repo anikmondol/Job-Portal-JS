@@ -44,7 +44,7 @@ ul {
 }
 
 .section {
-    margin: 10rem 0rem;
+    margin: 5rem 0rem;
 }
 
 .none {
@@ -565,6 +565,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 2rem;
+    transition: 0.2s;
+}
+
+.sing_in_form .link:hover {
+    color: var(--color-primary);
 }
 
 .sing_in_form .from_title {
@@ -639,6 +644,200 @@ footer {
     text-decoration: underline;
     margin-bottom: 0.5rem;
 
+}
+
+.job_info {
+    background: url("../image/job_info.png");
+    height: 35vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0px 8rem;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, #01487B, #06C1EC);
+}
+
+.job_info_header {
+    padding-top: 10rem;
+}
+
+.job_info_header .job_info_title {
+    margin-bottom: 2rem;
+    color: var(--color-withe-2);
+    font-size: 4rem;
+}
+
+.job_info_header .job_info_p {
+    color: var(--color-withe-2);
+    font-size: 1.5rem;
+}
+
+/* job_details */
+
+.job_details {
+    display: flex;
+    gap: 3rem;
+}
+
+.job_details .fa-bookmark {
+    font-size: 2rem;
+}
+
+.details {
+    width: 80%;
+}
+
+.box {
+    width: 20%;
+}
+
+.summary {
+    border: 0.1rem solid #e4dddd;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.summary h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary h3 .text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.summary_item {
+    margin: 1rem 0rem;
+}
+
+.summary_item p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.summary_item span {
+    font-size: 1rem;
+}
+
+.summary_btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.summary_btns button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 3rem;
+    border-radius: 0.5rem;
+}
+
+.summary_btns button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-withe-2);
+}
+
+.related_title {
+    margin: 1.5rem 0rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.related_box {
+    border: 0.1rem solid #e4dddd;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.related_box p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.related_box span {
+    font-size: 1rem;
+}
+
+.span_tags {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.related_des {
+    font-size: 1rem !important;
+}
+
+.related_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.related_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.month {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* details */
+
+.details_title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.details_box_title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.details_box p {
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.details_box li {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.details_btn {
+    border: none;
+    outline: none;
+    padding: 1.5rem 5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-dark-1);
+    background-color: var(--color-yellow);
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    margin-top: 3rem;
+}
+
+.details_btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-withe-1);
 }
 
 /* responsive  part  */
@@ -842,6 +1041,37 @@ footer {
         top: 10rem;
     }
 
+
+    /* job_details */
+
+    .job_details {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .details {
+        width: 68%;
+    }
+
+    .box {
+        width: 32%;
+    }
+
+    .details_title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .details_btn {
+        padding: 1.5rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .details_box li {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
 }
 
 /* mobile device */
@@ -937,12 +1167,42 @@ footer {
     }
 
     .sing_in_form .link {
-        top: 12rem;
+        top: 11rem;
     }
 
     .sing_in_form form {
         max-width: 75rem;
         margin-top: 10rem;
+    }
+
+    .sing_in_form form img {
+        max-width: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+/* job header */
+
+.job_info_header .job_info_title {
+    margin-bottom: 2rem;
+    color: var(--color-withe-2);
+    font-size: 3rem;
+}
+
+
+    /* job_details */
+
+    .job_details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
     }
 
 }
