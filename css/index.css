@@ -908,11 +908,11 @@ footer {
 }
 
 .main_div {
-    width: 70%;
+    width: 75%;
 }
 
 .filter_div {
-    width: 30%;
+    width: 25%;
 }
 
 .filter_div .reset_box {
@@ -1000,6 +1000,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
 }
 
 .main_first h5 {
@@ -1016,6 +1017,7 @@ footer {
     border: none;
     border: 0.1rem solid var(--color-withe-1);
     margin-bottom: 0.8rem;
+    margin-top: 2rem;
 }
 
 .main_first input:hover {
@@ -1026,6 +1028,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .main_btns button {
@@ -1216,13 +1219,54 @@ footer {
 }
 
 .main_title{
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
 .filter_div label{
     font-size: 1.1rem;
 }
+
+/* grid condition */
+
+/* Basic styles for grid and buttons */
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* Default to 3 cards per row */
+.grid-container.three-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.2rem;
+}
+
+/* 4 cards per row when 'four-bar' is clicked */
+.grid-container.four-cards {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2.2rem;
+}
+
+
+/* pagination */
+
+#pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+#pagination a {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 14px 19px;
+    color: var(--color-withe-1);
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
 
 
 /* responsive  part  */
@@ -1457,6 +1501,36 @@ footer {
         margin-bottom: 0.4rem;
     }
 
+    /* jobs_listing */
+
+    .main_container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    /* .incons_div div {
+       display: none;
+    } */
+
+    .swiper_items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+   /* Default to 3 cards per row */
+.grid-container.three-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2.2rem;
+}
+
+/* 4 cards per row when 'four-bar' is clicked */
+.grid-container.four-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.2rem;
+}
+
 }
 
 /* mobile device */
@@ -1589,5 +1663,68 @@ footer {
     .box {
         width: 100%;
     }
+
+     /* jobs_listing */
+
+     .mySwiper{
+        display: none;
+     }
+     
+     .main_container {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .filter_div {
+        width: 100%;
+    }
+
+    .main_div {
+        width: 100%;
+    }
+
+    .main_div .result_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .incons_div div {
+        display: none;
+    }
+    
+      /* Default to 3 cards per row */
+.grid-container.three-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.2rem;
+}
+
+/* 4 cards per row when 'four-bar' is clicked */
+.grid-container.four-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.2rem;
+}
+
+
+/* pagination */
+
+#pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+#pagination a {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 12px 14px;
+    color: var(--color-withe-1);
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
 
 }

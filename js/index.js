@@ -161,3 +161,22 @@ const maxPercent = (maxSlider.value / maxSlider.max) * 100;
 rangeTrack.style.left = `${minPercent}%`;
 rangeTrack.style.width = `${maxPercent - minPercent}%`;
 }
+
+
+// grid condition
+
+const gridContainer = document.getElementById("gridContainer");
+const threeBarButton = document.getElementById("three-bar");
+const fourBarButton = document.getElementById("four-bar");
+
+// Function to change layout to 3 cards per row
+threeBarButton.addEventListener("click", () => {
+    gridContainer.classList.add("three-cards");
+    gridContainer.classList.remove("four-cards");
+});
+
+// Function to change layout to 4 cards per row
+fourBarButton.addEventListener("click", () => {
+    gridContainer.classList.add("four-cards");
+    gridContainer.classList.remove("three-cards");
+});

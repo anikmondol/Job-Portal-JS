@@ -198,7 +198,7 @@
                         <div class="filter-title collapsed" onclick="toggleSection(this)">
                             <span class="main_title">Job Type</span> <i class="fas fa-chevron-down"></i>
                         </div>
-                        <div class="filter-content">
+                        <div class="filter-content" style="display: none;">
                             <div class="filter-option">
                                 <input type="checkbox" id="all">
                                 <label for="all">All <span>(563)</span></label>
@@ -227,7 +227,7 @@
                         <div class="filter-title collapsed" onclick="toggleSection(this)">
                             <span class="main_title">Job Location</span> <i class="fas fa-chevron-down"></i>
                         </div>
-                        <div class="filter-content">
+                        <div class="filter-content" style="display: none;">
                             <div class="filter-option">
                                 <input type="checkbox" id="australia">
                                 <label for="australia">Australia</label>
@@ -256,7 +256,7 @@
                         <div class="filter-title collapsed" onclick="toggleSection(this)">
                             <span class="main_title">Job Setup</span> <i class="fas fa-chevron-down"></i>
                         </div>
-                        <div class="filter-content">
+                        <div class="filter-content" style="display: none;">
                             <div class="filter-option">
                                 <input type="checkbox" id="remote">
                                 <label for="remote">Remote <span>(59)</span></label>
@@ -273,7 +273,7 @@
                     </div>
                 
                     <div class="salary-range-section">
-                        <div class="salary-title">Salary Range</div>
+                        <div class="salary-title main_title">Salary Range</div>
                         
                         <div class="min-max-labels">
                             <span>Min</span>
@@ -312,14 +312,14 @@
                         <h4>Showing results: 30</h4>
                         <div class="incons_div">
                             <div>
-                                <i class="fa-solid fa-bars"></i>
-                                <i class="fa-solid fa-list"></i>
+                                <i id="three-bar" class="fa-solid fa-bars"></i>
+                                <i id="four-bar" class="fa-solid fa-list"></i>
                             </div>
                             <span class="relevance"><i class="fa-solid fa-bars-staggered"></i> <span>Relevance</span>
                                 <span><i class="fa-solid fa-chevron-down"></i></span></span>
                         </div>
                     </div>
-                    <div class="main_grid">
+                    <div  id="gridContainer" class="grid-container three-cards">
                         <div class="related_box main_first">
                             <h5>Be one of the first to see new jobs in Transparent BPO</h5>
                             <input type="email" placeholder="Email">
@@ -343,8 +343,8 @@
                                 <span>5h ago</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -362,8 +362,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -381,8 +381,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -400,8 +400,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -419,8 +419,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -438,8 +438,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -457,8 +457,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -476,8 +476,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -495,8 +495,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -514,8 +514,8 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         <div class="related_box jobs_listing_box">
@@ -533,15 +533,28 @@
                                 <span>10 Nov 2023</span>
                             </div>
                             <div class="related_buttons">
-                                <button>View details</button>
-                                <button class="apply_btn">Apply Now</button>
+                                <button onclick="window.location.href='job_info.html'">View details</button>
+                                <button class="apply_btn" onclick="alert('Do Apply This Position')">Apply Now</button>
                             </div>
                         </div>
                         
                     </div>
+
+                      <!-- pagination start -->
+
+        <section id="pagination" class="section_p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+
+        <!-- pagination end -->
                 </div>
 
+                
+
             </div>
+            
         </section>
 
         <!-- jobs listing main end -->
