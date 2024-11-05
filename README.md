@@ -6,7 +6,7 @@ Job-Portal-JS is a JavaScript-powered, interactive Facilitate Job Postings websi
 
 # Installation
 
-- https://github.com/anikmondol/https://github.com/anikmondol/Job-Portal-JS
+- https://github.com/anikmondol/Job-Portal-JS
 - cd Job-Portal-JS
 
 
